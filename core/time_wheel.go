@@ -93,6 +93,7 @@ func (this *TimeWheel) AddTask(args interface{}, wheelSlotFunc WheelSlotFunc,del
 func GetTimeWheel(slotSize int, slotTimeInterval time.Duration) TimeWheel {
 	timeWheel := TimeWheel{}
 	timeWheel.Init(slotSize, slotTimeInterval)
+	go timeWheel.Start()
 
 	return timeWheel
 }
