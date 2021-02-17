@@ -40,7 +40,7 @@ func GetTimeWheels() TimeWheelMap {
 }
 
 func calcDelayTimeBelongClass(delayTime time.Duration) TimeWheelSize {
-	if delayTime.Milliseconds()%time.Hour.Milliseconds() * int64(24) == 0 {
+	if delayTime.Milliseconds()%(time.Hour*24).Milliseconds() == 0 {
 		return TimeWheelSizeDay
 	}else if delayTime.Milliseconds()%time.Hour.Milliseconds() == 0 {
 		return TimeWheelSizeHour

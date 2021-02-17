@@ -1,7 +1,6 @@
 package core
 
 import (
-	"fmt"
 	"sync"
 	"time"
 )
@@ -49,7 +48,7 @@ func (this *TimeWheel) Init(slotSize int, slotTimeInterval time.Duration) {
 
 func (this *TimeWheel) Start(){
 	for {
-		fmt.Println("current slot",this.currentSlot)
+		//fmt.Println("current slot",this.currentSlot)
 		this.lock.RLock()
 		defer this.lock.RUnlock()
 		//exec current slot function
@@ -79,15 +78,29 @@ func (this *TimeWheel) Start(){
 }
 
 func (this *TimeWheel) AddTask(args interface{}, wheelSlotFunc WheelSlotFunc,delayTime time.Duration) {
-	loopCount := int(delayTime.Milliseconds()/this.slotTimeInterval.Milliseconds())
+	slotCount := this.getSlotCount(delayTime)
 	//structure the insert slot
 	slotEntity := slotEntity{}
-	slotEntity.Init(args,wheelSlotFunc,loopCount/this.slotSize)
+	slotEntity.Init(args,wheelSlotFunc,this.getLoopCount(slotCount))
 
 	this.lock.Lock()
 	defer this.lock.Unlock()
 	//insert right slot
-	this.wheelSlots[(this.currentSlot + loopCount%this.slotSize)%this.slotSize] = append(this.wheelSlots[(this.currentSlot + loopCount%this.slotSize)%this.slotSize],slotEntity)
+	this.wheelSlots[this.getTaskIndex(slotCount)] = append(this.wheelSlots[this.getTaskIndex(slotCount)],slotEntity)
+}
+
+func (this *TimeWheel) getLoopCount(slotCount int)int{
+	return slotCount/this.slotSize
+}
+
+//calc the wheel cycle times
+func(this *TimeWheel) getSlotCount(delayTime time.Duration) int {
+	return int(delayTime.Milliseconds()/this.slotTimeInterval.Milliseconds())
+}
+
+//calc the task right index
+func (this *TimeWheel) getTaskIndex(loopCount int) int {
+	return (this.currentSlot + loopCount%this.slotSize)%this.slotSize
 }
 
 func GetTimeWheel(slotSize int, slotTimeInterval time.Duration) TimeWheel {
