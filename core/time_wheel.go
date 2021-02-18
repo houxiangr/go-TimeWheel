@@ -128,7 +128,7 @@ func (this *TimeWheel) getTaskIndex(loopCount int) int {
 
 //calc the task right index
 func (this *TimeWheel) dealFailTask(failTask slotEntity) {
-	this.failTask = append(this.failTask,failTask)
+	this.failTask = append(this.failTask, failTask)
 }
 
 //calc the task right index

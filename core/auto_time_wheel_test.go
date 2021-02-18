@@ -8,7 +8,7 @@ import (
 
 func TestGetTimeWheels(t *testing.T) {
 	timeWheels := GetTimeWheels()
-	timeWheels.AddTask("world", func(args interface{})error {
+	timeWheels.AddTask("world", func(args interface{}) error {
 		fmt.Println("hello", args)
 		return nil
 	}, time.Second*1)
