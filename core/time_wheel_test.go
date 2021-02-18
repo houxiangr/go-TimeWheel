@@ -8,8 +8,9 @@ import (
 
 func TestGetTimeWheel(t *testing.T) {
 	timeWheel := GetTimeWheel(10, time.Second)
-	timeWheel.AddTask("world", func(args interface{}) {
+	timeWheel.AddTask("world", func(args interface{}) error {
 		fmt.Println("hello", args)
+		return nil
 	}, time.Second*1)
 
 	time.Sleep(time.Second * 2)
@@ -93,8 +94,9 @@ func TestAddTask(t *testing.T) {
 		{
 			name: "case1: one times",
 			args: "world",
-			wheelSlotFunc: func(args interface{}) {
+			wheelSlotFunc: func(args interface{}) error {
 				fmt.Println("hello", args)
+				return nil
 			},
 			delayTime:     time.Second,
 			wantTaskCount: 1,

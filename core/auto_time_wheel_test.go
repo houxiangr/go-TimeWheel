@@ -8,8 +8,9 @@ import (
 
 func TestGetTimeWheels(t *testing.T) {
 	timeWheels := GetTimeWheels()
-	timeWheels.AddTask("world", func(args interface{}) {
+	timeWheels.AddTask("world", func(args interface{})error {
 		fmt.Println("hello", args)
+		return nil
 	}, time.Second*1)
 
 	time.Sleep(time.Second * 2)
@@ -17,15 +18,17 @@ func TestGetTimeWheels(t *testing.T) {
 
 func TestAutoAddTask(t *testing.T) {
 	timeWheels := GetTimeWheels()
-	timeWheels.AddTask("world", func(args interface{}) {
+	timeWheels.AddTask("world", func(args interface{}) error {
 		fmt.Println("hello", args)
+		return nil
 	}, time.Second*5)
 	if timeWheels[TimeWheelSizeSecond] == nil {
 		t.Error("auto create wheel fail")
 	}
 
-	timeWheels.AddTask("world", func(args interface{}) {
+	timeWheels.AddTask("world", func(args interface{}) error {
 		fmt.Println("hello", args)
+		return nil
 	}, time.Second*5)
 	if len(timeWheels[TimeWheelSizeSecond].wheelSlots[5]) != 2 {
 		t.Error("repeat auto create wheel fail")
