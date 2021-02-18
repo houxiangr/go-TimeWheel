@@ -10,9 +10,9 @@ func TestGetTimeWheels(t *testing.T) {
 	timeWheels := GetTimeWheels()
 	timeWheels.AddTask("world",func(args interface{}){
 		fmt.Println("hello",args)
-	},time.Second*5)
+	},time.Second*1)
 
-	time.Sleep(time.Second*10000)
+	time.Sleep(time.Second*2)
 }
 
 func TestAutoAddTask(t *testing.T){

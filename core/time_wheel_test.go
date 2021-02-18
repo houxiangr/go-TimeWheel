@@ -10,9 +10,9 @@ func TestGetTimeWheel(t *testing.T) {
 	timeWheel := GetTimeWheel(10,time.Second)
 	timeWheel.AddTask("world",func(args interface{}){
 		fmt.Println("hello",args)
-	},time.Second*5)
+	},time.Second*1)
 
-	time.Sleep(time.Second*6)
+	time.Sleep(time.Second*2)
 }
 
 
