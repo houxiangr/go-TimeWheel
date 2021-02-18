@@ -7,19 +7,18 @@ import (
 )
 
 func TestGetTimeWheel(t *testing.T) {
-	timeWheel := GetTimeWheel(10,time.Second)
-	timeWheel.AddTask("world",func(args interface{}){
-		fmt.Println("hello",args)
-	},time.Second*1)
+	timeWheel := GetTimeWheel(10, time.Second)
+	timeWheel.AddTask("world", func(args interface{}) {
+		fmt.Println("hello", args)
+	}, time.Second*1)
 
-	time.Sleep(time.Second*2)
+	time.Sleep(time.Second * 2)
 }
 
-
-func TestGetSlotCount(t *testing.T){
-	timeWheel := GetTimeWheel(10,time.Second)
+func TestGetSlotCount(t *testing.T) {
+	timeWheel := GetTimeWheel(10, time.Second)
 	tests := []struct {
-		name   string
+		name string
 		args time.Duration
 		want int
 	}{
@@ -38,10 +37,10 @@ func TestGetSlotCount(t *testing.T){
 	}
 }
 
-func TestGetloopCount(t *testing.T){
-	timeWheel := GetTimeWheel(10,time.Second)
+func TestGetloopCount(t *testing.T) {
+	timeWheel := GetTimeWheel(10, time.Second)
 	tests := []struct {
-		name   string
+		name string
 		args int
 		want int
 	}{
@@ -61,9 +60,9 @@ func TestGetloopCount(t *testing.T){
 }
 
 func TestGetTaskIndex(t *testing.T) {
-	timeWheel := GetTimeWheel(10,time.Second)
+	timeWheel := GetTimeWheel(10, time.Second)
 	tests := []struct {
-		name   string
+		name string
 		args int
 		want int
 	}{
@@ -82,28 +81,28 @@ func TestGetTaskIndex(t *testing.T) {
 	}
 }
 
-func TestAddTask(t *testing.T){
-	timeWheel := GetTimeWheel(10,time.Second)
+func TestAddTask(t *testing.T) {
+	timeWheel := GetTimeWheel(10, time.Second)
 	tests := []struct {
-		name   string
-		args interface{}
+		name          string
+		args          interface{}
 		wheelSlotFunc WheelSlotFunc
-		delayTime time.Duration
+		delayTime     time.Duration
 		wantTaskCount int
 	}{
 		{
 			name: "case1: one times",
 			args: "world",
-			wheelSlotFunc: func(args interface{}){
-				fmt.Println("hello",args)
+			wheelSlotFunc: func(args interface{}) {
+				fmt.Println("hello", args)
 			},
-			delayTime:time.Second,
+			delayTime:     time.Second,
 			wantTaskCount: 1,
 		},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			timeWheel.AddTask(tt.args,tt.wheelSlotFunc,tt.delayTime)
+			timeWheel.AddTask(tt.args, tt.wheelSlotFunc, tt.delayTime)
 			gotCount := len(timeWheel.wheelSlots[1])
 			if gotCount != tt.wantTaskCount {
 				t.Errorf("TestGetTaskIndex() = %v, want %v", gotCount, tt.wantTaskCount)

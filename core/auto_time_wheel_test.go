@@ -8,39 +8,39 @@ import (
 
 func TestGetTimeWheels(t *testing.T) {
 	timeWheels := GetTimeWheels()
-	timeWheels.AddTask("world",func(args interface{}){
-		fmt.Println("hello",args)
-	},time.Second*1)
+	timeWheels.AddTask("world", func(args interface{}) {
+		fmt.Println("hello", args)
+	}, time.Second*1)
 
-	time.Sleep(time.Second*2)
+	time.Sleep(time.Second * 2)
 }
 
-func TestAutoAddTask(t *testing.T){
+func TestAutoAddTask(t *testing.T) {
 	timeWheels := GetTimeWheels()
-	timeWheels.AddTask("world",func(args interface{}){
-		fmt.Println("hello",args)
-	},time.Second*5)
+	timeWheels.AddTask("world", func(args interface{}) {
+		fmt.Println("hello", args)
+	}, time.Second*5)
 	if timeWheels[TimeWheelSizeSecond] == nil {
 		t.Error("auto create wheel fail")
 	}
 
-	timeWheels.AddTask("world",func(args interface{}){
-		fmt.Println("hello",args)
-	},time.Second*5)
+	timeWheels.AddTask("world", func(args interface{}) {
+		fmt.Println("hello", args)
+	}, time.Second*5)
 	if len(timeWheels[TimeWheelSizeSecond].wheelSlots[5]) != 2 {
 		t.Error("repeat auto create wheel fail")
 	}
 }
 
-func TestCalcDelayTimeBelongClass(t *testing.T){
+func TestCalcDelayTimeBelongClass(t *testing.T) {
 	tests := []struct {
-		name   string
+		name string
 		args time.Duration
 		want TimeWheelSize
 	}{
 		{
 			name: "delay time is one hour",
-			args: time.Hour*24,
+			args: time.Hour * 24,
 			want: TimeWheelSizeDay,
 		},
 		{
@@ -73,15 +73,15 @@ func TestCalcDelayTimeBelongClass(t *testing.T){
 	}
 }
 
-func TestGetSlotTimeIntervalByTimeWheelSize(t *testing.T){
+func TestGetSlotTimeIntervalByTimeWheelSize(t *testing.T) {
 	tests := []struct {
-		name   string
+		name string
 		args TimeWheelSize
 		want time.Duration
 	}{
 		{
 			name: "delay time is one hour",
-			want: time.Hour*24,
+			want: time.Hour * 24,
 			args: TimeWheelSizeDay,
 		},
 		{
