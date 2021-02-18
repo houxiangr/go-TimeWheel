@@ -62,7 +62,6 @@ func (this *TimeWheel) Start() {
 		}
 		//fmt.Println("current slot",this.currentSlot)
 		this.lock.RLock()
-		defer this.lock.RUnlock()
 		//exec current slot function
 		slotEntity := this.wheelSlots[this.currentSlot]
 		entityLen := len(slotEntity)
@@ -89,7 +88,7 @@ func (this *TimeWheel) Start() {
 
 		//update current slot index
 		this.currentSlot = (this.currentSlot + 1) % this.slotSize
-
+		this.lock.RUnlock()
 		//sleep
 		time.Sleep(this.slotTimeInterval)
 	}
