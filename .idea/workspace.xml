@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="084565ae-9af8-478a-a596-b2dd07debbaa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/core/auto_time_wheel_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/time_wheel.go" beforeDir="false" afterPath="$PROJECT_DIR$/core/time_wheel.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/time_wheel_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/core/time_wheel_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/auto_time_wheel.go" beforeDir="false" afterPath="$PROJECT_DIR$/core/auto_time_wheel.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,74 +12,21 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/go.mod">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/time_wheel.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="92" column="22" selection-start-line="92" selection-start-column="22" selection-end-line="92" selection-end-column="22" />
-              <folding>
-                <element signature="e#14#47#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/auto_time_wheel.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="32">
-              <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file:///usr/local/go/src/time/time.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="519">
-              <caret line="661" column="4" selection-start-line="661" selection-start-column="4" selection-end-line="661" selection-end-column="4" />
+            <state relative-caret-position="278">
+              <caret line="39" column="57" selection-start-line="39" selection-start-column="57" selection-end-line="39" selection-end-column="57" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/core/time_wheel_test.go">
+        <entry file="file://$PROJECT_DIR$/core/auto_time_wheel.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="15" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
-              <folding>
-                <element signature="e#14#50#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/auto_time_wheel_test.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
-              <folding>
-                <element signature="e#14#50#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="60">
-                <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-              </first_editor>
-              <second_editor />
+            <state relative-caret-position="95">
+              <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -123,10 +67,11 @@
         <option value="$PROJECT_DIR$/core.go" />
         <option value="$PROJECT_DIR$/core/time_wheel_slice.go" />
         <option value="$PROJECT_DIR$/main.go" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/core/auto_time_wheel_test.go" />
-        <option value="$PROJECT_DIR$/core/time_wheel.go" />
         <option value="$PROJECT_DIR$/core/time_wheel_test.go" />
+        <option value="$PROJECT_DIR$/core/time_wheel.go" />
+        <option value="$PROJECT_DIR$/core/auto_time_wheel_test.go" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/core/auto_time_wheel.go" />
       </list>
     </option>
   </component>
@@ -141,7 +86,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -162,6 +106,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -194,17 +139,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Test.TestGetloopCount in github.com/go-TimeWheel/core">
-    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="go-TimeWheel" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/main.go" />
-      <package value="github.com/go-TimeWheel" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestGetTimeWheel in github.com/go-TimeWheel/core" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Test.TestAutoAddTask in github.com/go-TimeWheel/core">
+    <configuration name="TestAddTask in github.com/go-TimeWheel/core" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="go-TimeWheel" />
       <working_directory value="$PROJECT_DIR$/core" />
       <framework value="gotest" />
@@ -212,10 +148,10 @@
       <package value="github.com/go-TimeWheel/core" />
       <directory value="$PROJECT_DIR$/" />
       <filePath value="$PROJECT_DIR$/" />
-      <pattern value="^TestGetTimeWheel$" />
+      <pattern value="^TestAddTask$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestGetTimeWheels in github.com/go-TimeWheel/core" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestAutoAddTask in github.com/go-TimeWheel/core" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="go-TimeWheel" />
       <working_directory value="$PROJECT_DIR$/core" />
       <framework value="gotest" />
@@ -223,7 +159,29 @@
       <package value="github.com/go-TimeWheel/core" />
       <directory value="$PROJECT_DIR$/" />
       <filePath value="$PROJECT_DIR$/" />
-      <pattern value="^TestGetTimeWheels$" />
+      <pattern value="^TestAutoAddTask$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestCalcDelayTimeBelongClass in github.com/go-TimeWheel/core" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="go-TimeWheel" />
+      <working_directory value="$PROJECT_DIR$/core" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="github.com/go-TimeWheel/core" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestCalcDelayTimeBelongClass$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestGetSlotTimeIntervalByTimeWheelSize in github.com/go-TimeWheel/core" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="go-TimeWheel" />
+      <working_directory value="$PROJECT_DIR$/core" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="github.com/go-TimeWheel/core" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestGetSlotTimeIntervalByTimeWheelSize$" />
       <method v="2" />
     </configuration>
     <configuration name="TestGetloopCount in github.com/go-TimeWheel/core" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -239,25 +197,44 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestAutoAddTask in github.com/go-TimeWheel/core" />
+        <item itemvalue="Go Test.TestGetSlotTimeIntervalByTimeWheelSize in github.com/go-TimeWheel/core" />
+        <item itemvalue="Go Test.TestCalcDelayTimeBelongClass in github.com/go-TimeWheel/core" />
+        <item itemvalue="Go Test.TestAddTask in github.com/go-TimeWheel/core" />
         <item itemvalue="Go Test.TestGetloopCount in github.com/go-TimeWheel/core" />
-        <item itemvalue="Go Test.TestGetTimeWheel in github.com/go-TimeWheel/core" />
-        <item itemvalue="Go Test.TestGetTimeWheels in github.com/go-TimeWheel/core" />
-        <item itemvalue="Go Build.go build main.go" />
       </list>
     </recent_temporary>
   </component>
   <component name="TestHistory">
-    <history-entry file="TestGetTimeWheel_in_github_com_go-TimeWheel_core - 2021.02.17 at 20h 00m 55s.xml">
-      <configuration name="TestGetTimeWheel in github.com/go-TimeWheel/core" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestAddTask_in_github_com_go-TimeWheel_core - 2021.02.17 at 20h 23m 43s.xml">
+      <configuration name="TestAddTask in github.com/go-TimeWheel/core" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestGetTimeWheels_in_github_com_go-TimeWheel_core - 2021.02.17 at 20h 02m 19s.xml">
-      <configuration name="TestGetTimeWheels in github.com/go-TimeWheel/core" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestAddTask_in_github_com_go-TimeWheel_core - 2021.02.17 at 20h 25m 49s.xml">
+      <configuration name="TestAddTask in github.com/go-TimeWheel/core" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestGetTimeWheel_in_github_com_go-TimeWheel_core - 2021.02.17 at 20h 02m 56s.xml">
-      <configuration name="TestGetTimeWheel in github.com/go-TimeWheel/core" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestAddTask_in_github_com_go-TimeWheel_core - 2021.02.17 at 20h 25m 55s.xml">
+      <configuration name="TestAddTask in github.com/go-TimeWheel/core" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestGetloopCount_in_github_com_go-TimeWheel_core - 2021.02.17 at 20h 08m 44s.xml">
-      <configuration name="TestGetloopCount in github.com/go-TimeWheel/core" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestCalcDelayTimeBelongClass_in_github_com_go-TimeWheel_core - 2021.02.17 at 20h 28m 36s.xml">
+      <configuration name="TestCalcDelayTimeBelongClass in github.com/go-TimeWheel/core" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestCalcDelayTimeBelongClass_in_github_com_go-TimeWheel_core - 2021.02.17 at 20h 31m 23s.xml">
+      <configuration name="TestCalcDelayTimeBelongClass in github.com/go-TimeWheel/core" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestCalcDelayTimeBelongClass_in_github_com_go-TimeWheel_core - 2021.02.17 at 20h 32m 40s.xml">
+      <configuration name="TestCalcDelayTimeBelongClass in github.com/go-TimeWheel/core" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestGetSlotTimeIntervalByTimeWheelSize_in_github_com_go-TimeWheel_core - 2021.02.17 at 20h 35m 01s.xml">
+      <configuration name="TestGetSlotTimeIntervalByTimeWheelSize in github.com/go-TimeWheel/core" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestAutoAddTask_in_github_com_go-TimeWheel_core - 2021.02.17 at 20h 37m 41s.xml">
+      <configuration name="TestAutoAddTask in github.com/go-TimeWheel/core" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestAutoAddTask_in_github_com_go-TimeWheel_core - 2021.02.17 at 20h 40m 41s.xml">
+      <configuration name="TestAutoAddTask in github.com/go-TimeWheel/core" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestAutoAddTask_in_github_com_go-TimeWheel_core - 2021.02.17 at 20h 40m 45s.xml">
+      <configuration name="TestAutoAddTask in github.com/go-TimeWheel/core" configurationId="GoTestRunConfiguration" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -272,12 +249,12 @@
   <component name="ToolWindowManager">
     <frame x="4" y="23" width="1436" height="877" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24964131" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25322813" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3299363" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.555414" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -286,7 +263,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="GenProtobuf" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32356688" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.5719745" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -302,17 +279,40 @@
     <entry file="file://$PROJECT_DIR$/go.mod">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/core/time_wheel_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+          <folding>
+            <element signature="e#14#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/auto_time_wheel_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+          <folding>
+            <element signature="e#14#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file:///usr/local/go/src/time/time.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="519">
+        <state relative-caret-position="451">
           <caret line="661" column="4" selection-start-line="661" selection-start-column="4" selection-end-line="661" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/auto_time_wheel.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="60">
+            <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
@@ -326,43 +326,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="60">
-            <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/auto_time_wheel_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
-          <folding>
-            <element signature="e#14#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/time_wheel.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="92" column="22" selection-start-line="92" selection-start-column="22" selection-end-line="92" selection-end-column="22" />
-          <folding>
-            <element signature="e#14#47#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="278">
+          <caret line="39" column="57" selection-start-line="39" selection-start-column="57" selection-end-line="39" selection-end-column="57" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/time_wheel_test.go">
+    <entry file="file://$PROJECT_DIR$/core/auto_time_wheel.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="15" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
-          <folding>
-            <element signature="e#14#50#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="95">
+          <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
         </state>
       </provider>
     </entry>
