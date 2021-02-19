@@ -113,3 +113,49 @@ func TestAddTask(t *testing.T) {
 		})
 	}
 }
+
+func TestStopLoop(t *testing.T){
+	timeWheel := GetTimeWheel(10, time.Second)
+	tests := []struct {
+		name          string
+		want int
+	}{
+		{
+			name: "case1: stop time wheel",
+			want: 0,
+		},
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			timeWheel.stopLoop()
+			if timeWheel.currentSlot != tt.want {
+				t.Errorf("TestStopLoop() = %v, want %v", timeWheel.currentSlot, tt.want)
+			}
+
+		})
+	}
+}
+
+func TestDealFailTask(t *testing.T){
+	timeWheel := GetTimeWheel(10, time.Second)
+	tests := []struct {
+		name          string
+		args slotEntity
+		want int
+	}{
+		{
+			name: "case1: stop time wheel",
+			args:slotEntity{},
+			want: 1,
+		},
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			timeWheel.dealFailTask(tt.args)
+			if len(timeWheel.failTask) != tt.want {
+				t.Errorf("TestStopLoop() = %v, want %v", timeWheel.currentSlot, tt.want)
+			}
+
+		})
+	}
+}

@@ -138,7 +138,6 @@ func (this *TimeWheel) stopLoop() {
 func GetTimeWheel(slotSize int, slotTimeInterval time.Duration) TimeWheel {
 	timeWheel := TimeWheel{}
 	timeWheel.Init(slotSize, slotTimeInterval)
-	go timeWheel.Start()
 
 	return timeWheel
 }
