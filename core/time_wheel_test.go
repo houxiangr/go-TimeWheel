@@ -114,10 +114,10 @@ func TestAddTask(t *testing.T) {
 	}
 }
 
-func TestStopLoop(t *testing.T){
+func TestStopLoop(t *testing.T) {
 	timeWheel := GetTimeWheel(10, time.Second)
 	tests := []struct {
-		name          string
+		name string
 		want int
 	}{
 		{
@@ -136,16 +136,16 @@ func TestStopLoop(t *testing.T){
 	}
 }
 
-func TestDealFailTask(t *testing.T){
+func TestDealFailTask(t *testing.T) {
 	timeWheel := GetTimeWheel(10, time.Second)
 	tests := []struct {
-		name          string
+		name string
 		args slotEntity
 		want int
 	}{
 		{
 			name: "case1: stop time wheel",
-			args:slotEntity{},
+			args: slotEntity{},
 			want: 1,
 		},
 	}
